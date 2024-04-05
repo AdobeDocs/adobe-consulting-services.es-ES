@@ -2,7 +2,7 @@
 title: Información general sobre la integración de Veeva Vault
 description: Información general sobre la integración de Veeva Vault
 exl-id: 52cc7290-b7e1-4476-877f-48934e6daf68
-source-git-commit: 4d27e7ecca662b2082a18621becb0b8ec7735824
+source-git-commit: 005c738818ab622a342ddc3a94e94638e344d058
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
@@ -101,3 +101,4 @@ Los vales de soporte se pueden registrar con el Servicio de atención al cliente
 ### Solicitud de asistencia con Veeva Vault PromoMats
 
 A veces, el problema que se está experimentando es un problema con el funcionamiento de la instancia de Veeva Vault PromoMats. Si ese es el caso, su administrador de Veeva Vault PromoMats podría ser dirigido para crear un ticket de soporte con [Asistencia de Veeva](http://support.veeva.com/). El estado de la instancia de Veeva se puede ver navegando hasta [Veeva Trust](http://trust.veeva.com/).
+
