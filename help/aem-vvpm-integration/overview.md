@@ -2,7 +2,7 @@
 title: Información general sobre la integración de Veeva Vault
 description: Información general sobre la integración de Veeva Vault
 exl-id: 52cc7290-b7e1-4476-877f-48934e6daf68
-source-git-commit: 005c738818ab622a342ddc3a94e94638e344d058
+source-git-commit: 2e47baa4a255c34b3ca0b8631650dd5d8960fea8
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
@@ -33,8 +33,7 @@ Esta integración requiere las siguientes versiones mínimas de software:
 Esta integración está diseñada para admitir dos casos de uso principales:
 
 1. AEM Aprobación de contenido: cuando se ha creado contenido nuevo o se ha editado el contenido existente en el tiempo, el contenido debe aprobarse para su uso en VPM que admita el proceso de aprobación médica, legal, regulatoria (MLR) de las ciencias de la vida.
-
-2. AEM AEM Administración de contenido: proporcione visibilidad sobre la utilización de los recursos estableciendo relaciones en PromoMats entre las tácticas digitales (por ejemplo, correo electrónico, presentaciones, sitios web) y sus elementos (por ejemplo, logotipos, fotografía, gráficos) creados en para documentos que se originan en la.
+1. AEM AEM Administración de contenido: proporcione visibilidad sobre la utilización de los recursos estableciendo relaciones en PromoMats entre las tácticas digitales (por ejemplo, correo electrónico, presentaciones, sitios web) y sus elementos (por ejemplo, logotipos, fotografía, gráficos) creados en para documentos que se originan en la.
 
 Los beneficios incluyen:
 
@@ -67,7 +66,6 @@ Los beneficios incluyen:
 >[!IMPORTANT]
 >
 >AEM Actualmente, esta integración considera a los segmentos como la fuente fiable para la sincronización de contenido.
->
 
 ## Obtención de la integración
 
