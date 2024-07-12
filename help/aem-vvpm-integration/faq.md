@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Preguntas frecuentes
 
-**¿Qué metadatos deben sincronizarse con Veeva?**
+**¿Qué metadatos se deben sincronizar con Veeva?**
 
 Es importante comprender los metadatos basados en el tipo de contenido (p. ej., promociones) en el portal de Veeva. AEM Después de revisar el Portal de Veeva, construya el esquema de metadatos de contenido en el que se almacenen todos los metadatos relevantes para cada recurso o página y configure la integración para asignar los metadatos entre los dos sistemas.
 
-**¿Admite la integración los documentos vinculados a Veeva? Si no es así, ¿qué tipos de relación se admiten?**
+**¿La integración es compatible con los documentos vinculados de Veeva? Si no es así, ¿qué tipos de relación se admiten?**
 
-No. Consulte [Documentación de Veeva](https://vaulthelp2.vod309.com/wordpress/admin-user-help/documents-admin-user-help/about-document-relationships/). El documento vinculado (tipo de relación de referencia) es uno de los tipos de relación estándar que no se puede crear o eliminar mediante API debido a que tiene un comportamiento especial de Vault. AEM El componente, los documentos de soporte y cualquier otro no incluido en esta lista deben poder configurarse mediante la configuración en la nube de Veva a través de la configuración de la nube de Veva.
+No. Ver [documento de Veeva](https://vaulthelp2.vod309.com/wordpress/admin-user-help/documents-admin-user-help/about-document-relationships/). El documento vinculado (tipo de relación de referencia) es uno de los tipos de relación estándar que no se puede crear o eliminar mediante API debido a que tiene un comportamiento especial de Vault. AEM El componente, los documentos de soporte y cualquier otro no incluido en esta lista deben poder configurarse mediante la configuración en la nube de Veva a través de la configuración de la nube de Veva.
 
-**AEM ¿Admite la integración el contenido modular de la?**
+AEM **¿Admite la integración el contenido modular de la?**
 
 AEM Sí, la integración admite fragmentos de contenido y fragmentos de experiencias de la.
 
@@ -27,7 +27,7 @@ AEM Sí, la integración admite fragmentos de contenido y fragmentos de experien
 
 No, en este momento no.
 
-**AEM ¿La integración sincroniza las anotaciones visuales de Veeva con los datos de la?**
+AEM **¿La integración sincroniza las anotaciones visuales de Veeva con el elemento de datos de la vista de la vista de la vista de la página de datos de?**
 
 No, en este momento no. Solo se puede acceder a las anotaciones visuales mediante API como PDF.
 
@@ -39,6 +39,6 @@ La integración utiliza un usuario de servicio para cargar documentos a través 
 
 AEM La integración utiliza un enfoque de configuración en la nube que permite configurar varios puntos de conexión de Veeva desde una sola instancia de.
 
-**AEM ¿Admite la integración la publicación de datos de forma?**
+AEM **¿Admite la integración la publicación de los datos de manera predeterminada?**
 
 AEM No, esta integración solo funciona con el autor de la. Está pensado para facilitar los ciclos de revisión de MLR antes de que se publique el contenido.

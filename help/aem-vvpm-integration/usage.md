@@ -23,7 +23,7 @@ Esta guía le guiará para poner en marcha el conector.
 
 >[!IMPORTANT]
 >
->Para cada sistema, estos pasos deben ser realizados por un **administrador** para cada sistema.
+>Para cada sistema, un **administrador** debe realizar estos pasos con cada sistema.
 >
 >Los pasos de esta documentación le guiarán a través de la creación de integraciones/registros que impliquen la asignación de permisos o acceso de administrador.  Es su responsabilidad asegurarse de que estos pasos cumplan con las políticas de su compañía antes de realizarlos, y realizarlos cuidadosamente.
 >
@@ -32,22 +32,22 @@ Esta guía le guiará para poner en marcha el conector.
 
 AEM Recibirá acceso al paquete de integración de la. Existen dos opciones para instalar la integración:
 
-1. **Instalación de paquetes** - Directo y menos involucrado.
-2. **Instalación de POM** AEM : Más avanzado, pero puede resultar útil al utilizar Cloud Manager y actualizar la integración de la forma más rápida y eficaz.
+1. **Instalación de paquetes** - Directa y menos involucrada.
+2. **Instalación de POM**: más avanzada, pero puede resultar útil al usar AEM Cloud Manager y actualizar la integración.
 
 #### Instalación de paquetes
 
-Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. [AEM Encontrará instrucciones detalladas para instalar un paquete de haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
+Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. AEM [Encontrará instrucciones detalladas para la instalación de un paquete de haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
 
 #### Instalación de POM
 
 Para incluir el conector en el POM, siga estos pasos. Reemplace su nombre de usuario y contraseña por los que recibió en el correo electrónico de incorporación.
 
-1. Añada lo siguiente a `.cloudmanager/maven/settings.xml` en su proyecto o `~/.m2/settings.xml` en el equipo. Reemplazar `YOUR_USERNAME` con el nombre de usuario y `YOUR_PASSWORD` con la contraseña proporcionada en el correo electrónico de incorporación.
+1. Agregue lo siguiente al archivo `.cloudmanager/maven/settings.xml` de su proyecto o a `~/.m2/settings.xml` de su equipo. Reemplace `YOUR_USERNAME` con el nombre de usuario y `YOUR_PASSWORD` con la contraseña proporcionada en el correo electrónico de incorporación.
 
    >[!IMPORTANT]
    >
-   >Si utiliza Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories).
+   >Si usa Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories).
    >
 
    ```
@@ -70,7 +70,7 @@ Para incluir el conector en el POM, siga estos pasos. Reemplace su nombre de usu
    </settings>
    ```
 
-2. Añada lo siguiente al del proyecto `pom.xml` archivo:
+2. Agregue lo siguiente al archivo `pom.xml` del proyecto:
 
    ```
    <project>
@@ -104,7 +104,7 @@ Para incluir el conector en el POM, siga estos pasos. Reemplace su nombre de usu
    </project>
    ```
 
-3. Añada lo siguiente al del proyecto `all/pom.xml` archivo. Reemplazar `project.dependencies.dependency.version` con la versión adecuada y `project.build.plugins.plugin.configuration.embeddeds.embedded.target` con la ruta correcta.
+3. Agregue lo siguiente al archivo `all/pom.xml` del proyecto. Reemplace `project.dependencies.dependency.version` por la versión apropiada y `project.build.plugins.plugin.configuration.embeddeds.embedded.target` por la ruta de acceso correcta.
 
    ```
    <project>
@@ -166,26 +166,26 @@ Esta integración se configura creando una configuración de nube en la carpeta 
 
 Complete lo siguiente en la pestaña de configuración:
 
-![Pestaña Configuración](assets/configuration-tab.png)
+![Ficha de configuración](assets/configuration-tab.png)
 
-1. Requerido. Título para la configuración del conector de Veeva Vault. Puede ser un valor arbitrario. (p. ej., `Veeva Vault Configuration`)
-2. Requerido. La URL de dominio de la instancia de Veeva (por ejemplo, `https://my-instance.veevavault.com/`)
-3. Requerido. Se requiere ClientID para llamar a la API de Veeva Vault. Puede ser un valor arbitrario y se utiliza principalmente para la depuración. (p. ej., `adobe-aem-vvtechpartner`)
-4. Requerido. Nombre de usuario de Veeva Vault. Consulte [Creación de usuarios de Veeva](#veeva-user-creation).
-5. Requerido. Contraseña de Veeva Vault. Consulte [Creación de usuarios de Veeva](#veeva-user-creation).
+1. Requerido. Título para la configuración del conector de Veeva Vault. Puede ser un valor arbitrario. (p. ej. `Veeva Vault Configuration`)
+2. Requerido. La URL de dominio de la instancia de Veeva (p. ej. `https://my-instance.veevavault.com/`)
+3. Requerido. Se requiere ClientID para llamar a la API de Veeva Vault. Puede ser un valor arbitrario y se utiliza principalmente para la depuración. (p. ej. `adobe-aem-vvtechpartner`)
+4. Requerido. Nombre de usuario de Veeva Vault. Ver [Creación de usuarios de Veeva](#veeva-user-creation).
+5. Requerido. Contraseña de Veeva Vault. Ver [Creación de usuarios de Veeva](#veeva-user-creation).
 
 #### Pestaña E/S de Adobe
 
 Si el proyecto necesita generar PDF o imágenes para las páginas, esta pestaña es obligatoria. Complete lo siguiente en la pestaña Adobe IO:
 
-![Pestaña E/S de Adobe](assets/adobe-io-tab.png)
+![Ficha E/S de Adobe](assets/adobe-io-tab.png)
 
-1. Requerido. Extremo de E/S de Adobe para crear imágenes de PDF proporcionado en el correo electrónico de incorporación. (p. ej., `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
+1. Requerido. Extremo de E/S de Adobe para crear imágenes de PDF proporcionado en el correo electrónico de incorporación. (p. ej. `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/trigger-action.json`)
 2. Requerido. Nombre de la acción para la generación de imágenes de página. Este valor debe ser `aem-veeva-integration/get-image-async`.
 3. Requerido. Nombre de la acción para la generación de imágenes HTML. Este valor debe ser `aem-veeva-integration/get-pdf-async-new`.
-4. Requerido. El extremo de E/S de Adobe para obtener el estado de la generación que se proporcionó en el correo electrónico de incorporación.(p. ej., `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/get-state-value`)
-5. Requerido. AEM Nombre de usuario de que utilizará Adobe IO. Consulte [AEM Creación de usuario de](#aem-user-creation).
-6. Requerido. AEM Contraseña de que utilizará IO de Adobe. Consulte [AEM Creación de usuario de](#aem-user-creation).
+4. Requerido. El extremo de E/S de Adobe para obtener el estado de la generación que se proporcionó en el correo electrónico de incorporación.(p. ej. `https://my-namespace.adobeioruntime.net/api/v1/web/aem-veeva-serverless-0.0.2/get-state-value`)
+5. Requerido. AEM Nombre de usuario de que utilizará Adobe IO. AEM Consulte [Creación de usuarios de la](#aem-user-creation).
+6. Requerido. AEM Contraseña de que utilizará IO de Adobe. AEM Consulte [Creación de usuarios de la](#aem-user-creation).
 7. Opcional. El tiempo de espera predeterminado es permitir que la página responda hasta un momento especificado después del cual el servicio AIO deje de intentar obtener una respuesta. El valor predeterminado es `30000`.
 8. Opcional. El retraso es después de que la página haya respondido con 200 para retrasar todas las imágenes que se procesarán antes de tomar una captura de pantalla. El valor predeterminado es `2000`.
 9. Opcional. La URL generada por la captura de pantalla o el PDF caducará después de configurar el valor en segundos.
@@ -196,18 +196,18 @@ Si el proyecto necesita generar PDF o imágenes para las páginas, esta pestaña
 
 Complete lo siguiente en la pestaña avanzada:
 
-![Pestaña Avanzadas](assets/advanced-tab.png)
+![Ficha avanzada](assets/advanced-tab.png)
 
-1. Necesario para la generación de PDF/imágenes. Patrón de nombre de archivo utilizado al crear PDF e imágenes. `{name}` se puede crear una plantilla. (p. ej., `{name}-screenshot`)
-2. Opcional. Los tipos de dispositivo para los que se requieren capturas de pantalla de página que no sean de escritorio. Los tipos válidos incluyen `Tab (iPad)`, y `Mobile (iPhone X)`.
-3. Opcional. El valor del tipo de representación en Veeva que representa la representación anterior. (p. ej., `web_ready__c`)
-4. Necesario para la generación de PDF/imágenes. Tipo de captura de pantalla que crear. Cualquiera `PDF` o `Image`.
-5. Necesario para la generación de PDF/imágenes. Tipo de PDF que se va a generar. Cualquiera `Print CSS Based PDF` o `Pixel Perfect Screenshot PDF`.
-6. Necesario para la generación de PDF/imágenes. Tipo de imagen que se va a generar. Cualquiera `PNG` o `JPEG`.
+1. Necesario para la generación de PDF/imágenes. Patrón de nombre de archivo utilizado al crear PDF e imágenes. `{name}` se puede crear una plantilla. (p. ej. `{name}-screenshot`)
+2. Opcional. Los tipos de dispositivo para los que se requieren capturas de pantalla de página que no sean de escritorio. Los tipos válidos incluyen `Tab (iPad)` y `Mobile (iPhone X)`.
+3. Opcional. El valor del tipo de representación en Veeva que representa la representación anterior. (p. ej. `web_ready__c`)
+4. Necesario para la generación de PDF/imágenes. Tipo de captura de pantalla que crear. `PDF` o `Image`.
+5. Necesario para la generación de PDF/imágenes. Tipo de PDF que se va a generar. `Print CSS Based PDF` o `Pixel Perfect Screenshot PDF`.
+6. Necesario para la generación de PDF/imágenes. Tipo de imagen que se va a generar. `PNG` o `JPEG`.
 7. Requerido. El flujo de trabajo se ejecutará una vez que haya finalizado el déclencheur de aprobación de Veeva Vault.
-8. Requerido. Valor de propiedad Status que representa Approved. (p. ej., `Approved for Distribution`)
+8. Requerido. Valor de propiedad Status que representa Approved. (p. ej. `Approved for Distribution`)
 9. Requerido. El flujo de trabajo se ejecutará una vez que se haya completado el déclencheur de rechazo de Veeva Vault.
-10. Requerido. Valor de propiedad Status que representa Rechazado/No aprobado. (p. ej., `Rejected`)
+10. Requerido. Valor de propiedad Status que representa Rechazado/No aprobado. (p. ej. `Rejected`)
 11. Opcional. Nombre de propiedad para ID de documento en Veeva Vault. El valor predeterminado es `id`.
 12. Opcional. Nombre de propiedad de Status en Veeva Vault. El valor predeterminado es `status__v`.
 13. Opcional. Nombre de propiedad de la fecha de modificación del documento. El valor predeterminado es `version_modified_date__v`.
@@ -220,29 +220,34 @@ Complete lo siguiente en la pestaña avanzada:
 
 Si sincroniza páginas, complete lo siguiente en la pestaña de página:
 
-![Pestaña Página](assets/page-tab.png)
+![Ficha de página](assets/page-tab.png)
 
 1. Requerido. AEM Mapa de una propiedad de a Veeva.
-AEM a. nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej., `jcr:title`) `{name}` se puede crear una plantilla.
-b. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej., `name__v`)\
-   c. Tipo de propiedad. Cualquiera `Text` o `Multiline Text`.
+AEM a. nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej. `jcr:title`) `{name}` se puede crear una plantilla.
+b. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej. `name__v`)\
+   c. Tipo de propiedad. `Text` o `Multiline Text`.
 
 2. Requerido. AEM Mapa una propiedad de Veeva a.
-a. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej., `name__v`AEM ) b. Nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej., `jcr:title`) c. Tipo de propiedad. Cualquiera `Text` o `Multiline Text`.
+a. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej. `name__v`)
+AEM b. Nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej. `jcr:title`)
+c. Tipo de propiedad. `Text` o `Multiline Text`.
 
 
 #### Pestaña Recurso
 
 Si sincroniza recursos, complete lo siguiente en la pestaña de recursos:
 
-![Pestaña Recurso](assets/asset-tab.png)
+![Pestaña de recursos](assets/asset-tab.png)
 
 1. Requerido. AEM Mapa de una propiedad de a Veeva.
-AEM a. nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej., `/jcr:content/metadata/jcr:title`) `{name}` se puede crear una plantilla.
-b. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej., `name__v`) c. Tipo de propiedad. Cualquiera `Text` o `Multiline Text`.
+AEM a. nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej. `/jcr:content/metadata/jcr:title`) `{name}` se puede crear una plantilla.
+b. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej. `name__v`)
+c. Tipo de propiedad. `Text` o `Multiline Text`.
 
 2. Requerido. AEM Mapa una propiedad de Veeva a.
-a. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej., `name__v`AEM ) b. Nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej., `/jcr:content/metadata/jcr:title`) c. Tipo de propiedad. Cualquiera `Text` o `Multiline Text`.
+a. El nombre de propiedad de Veeva introducido exactamente en existe en Veeva. (p. ej. `name__v`)
+AEM b. Nombre de propiedad de la. AEM Seleccionable entre las propiedades de la. (p. ej. `/jcr:content/metadata/jcr:title`)
+c. Tipo de propiedad. `Text` o `Multiline Text`.
 
 ### Ajustes adicionales
 
@@ -252,12 +257,12 @@ Durante la generación de PDF AEM AEM e imágenes, es necesario crear un usuario
 
 AEM Si se utiliza la versión 6.5.5 (o posterior):
 
-* [AEM Creación de un usuario en la](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
-* [AEM Adición de permisos a un usuario en la aplicación de](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
+* AEM [Creando un usuario en el](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
+* AEM [Agregando permisos a un usuario en la lista de usuarios de la lista de permitidos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
 
 AEM Si se usan Cloud Service de:
 
-* [AEM Administración de usuarios con Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
+* AEM [Administración de usuarios con Cloud Service de](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
 
 AEM Se requieren los siguientes permisos para el usuario del servicio de en el contenido que se convertirá a PDF/imagen y se insertará en Veeva:
 
@@ -275,9 +280,9 @@ Para utilizar esta integración, es necesario crear un usuario en Veeva Vault. P
 
 1. Vaya a Administración -> Usuarios y grupos -> Usuarios de Vault -> Crear
 
-   ![Navegar a usuario de Veeva](assets/veeva-user-navigate.png)
+   ![Navegar a usuario Veeva](assets/veeva-user-navigate.png)
 
-2. Rellene las entradas necesarias. La configuración más sencilla es configurar el `License Type` hasta `Full User` y el `Security Profile` hasta `Vault Owner`. Guardar cuando se complete.
+2. Rellene las entradas necesarias. La configuración más sencilla es establecer `License Type` en `Full User` y `Security Profile` en `Vault Owner`. Guardar cuando se complete.
 
    ![Crear usuario de Veeva](assets/veeva-user-create.png)
 

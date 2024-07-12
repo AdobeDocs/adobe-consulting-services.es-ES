@@ -36,11 +36,11 @@ Tenga en cuenta las siguientes limitaciones al utilizar esta integración:
 * AEM No se admite la sincronización de anotaciones visuales de VPM de VPM a la.
 * AEM La integración de no importa contenido de VPM a.
 * No se admite la validación de metadatos.
-* El número de documentos está limitado en función de la licencia de Veeva. Consulte [Limitaciones de licencias](#veeva-license-limitations).
-* El número de llamadas API está limitado según la licencia de Veeva. Para obtener más información, consulte [Limitaciones de API](https://developer.veevavault.com/docs/#what-are-rate-limits). Consulte [Limitaciones de licencias](#veeva-license-limitations).
+* El número de documentos está limitado en función de la licencia de Veeva. Ver [Limitaciones de licencias](#veeva-license-limitations).
+* El número de llamadas API está limitado según la licencia de Veeva. Para obtener más información, consulte [Limitaciones de API](https://developer.veevavault.com/docs/#what-are-rate-limits). Ver [Limitaciones de licencias](#veeva-license-limitations).
 
 ## Limitaciones de licencia de Veeva
 
 Puede monitorizar los límites de las instancias navegando hasta la configuración general de VPM.
 
-![Veeva Limits](assets/veeva-limits.png)
+![Límites de Veeva](assets/veeva-limits.png)
