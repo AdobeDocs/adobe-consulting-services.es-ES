@@ -2,7 +2,7 @@
 title: Avisos de integración de Veeva Vault
 description: Avisos de integración de Veeva Vault
 exl-id: 1a188671-d123-4475-a607-65743ba0dadd
-source-git-commit: 07eab1e439626bd3bb3416c9e7d0c1666927a7aa
+source-git-commit: b024e4295b5b37030c1524342832400c279c650a
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 1%
@@ -24,17 +24,17 @@ Esta integración está diseñada para transferir contenido entre Adobe Experien
 
 ## Frecuencia de sincronización de contenido
 
-AEM AEM Cuando se activa el flujo de trabajo de integración, el contenido y los metadatos se sincronizan de la a la VPN. Esto se puede hacer de forma automática o manual. AEM Los metadatos de VPM se sincronizan de VPM a la. Esto se puede hacer automáticamente a través de un planificador o manualmente a través de un clic en un botón.
+El contenido y los metadatos de AEM se sincronizan de AEM a VPN cuando se activa el flujo de trabajo de integración. Esto se puede hacer de forma automática o manual. Los metadatos VPM se sincronizan de VPM a AEM. Esto se puede hacer automáticamente a través de un planificador o manualmente a través de un clic en un botón.
 
 ## Limitaciones de integración, prácticas recomendadas y protecciones
 
 Tenga en cuenta las siguientes limitaciones al utilizar esta integración:
 
 * Al sincronizar metadatos solo se admiten los siguientes tipos de datos: Texto y Texto multilínea.
-* AEM Aunque la integración admite contenido modular de la aplicación (fragmentos de contenido y fragmentos de experiencias), no admite contenido modular VPM.
+* Aunque la integración admite contenido modular de AEM (fragmentos de contenido y fragmentos de experiencias), no admite contenido modular VPM.
 * Los documentos vinculados a VPM no son compatibles.
-* AEM No se admite la sincronización de anotaciones visuales de VPM de VPM a la.
-* AEM La integración de no importa contenido de VPM a.
+* No se admite la sincronización de anotaciones visuales VPM de VPM a AEM.
+* La integración no importa contenido de VPM a AEM.
 * No se admite la validación de metadatos.
 * El número de documentos está limitado en función de la licencia de Veeva. Ver [Limitaciones de licencias](#veeva-license-limitations).
 * El número de llamadas API está limitado según la licencia de Veeva. Para obtener más información, consulte [Limitaciones de API](https://developer.veevavault.com/docs/#what-are-rate-limits). Ver [Limitaciones de licencias](#veeva-license-limitations).
@@ -44,3 +44,4 @@ Tenga en cuenta las siguientes limitaciones al utilizar esta integración:
 Puede monitorizar los límites de las instancias navegando hasta la configuración general de VPM.
 
 ![Límites de Veeva](assets/veeva-limits.png)
+
