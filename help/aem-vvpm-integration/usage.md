@@ -37,7 +37,7 @@ Recibirá acceso al paquete de integración de AEM. Existen dos opciones para in
 
 #### Instalación de paquetes
 
-Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. [Encontrará instrucciones detalladas para instalar un paquete de AEM haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
+Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. [Encontrará instrucciones detalladas para instalar un paquete de AEM haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?lang=es&#installing-packages)
 
 #### Instalación de POM
 
@@ -47,7 +47,7 @@ Para incluir el conector en el POM, siga estos pasos. Reemplace su nombre de usu
 
    >[!IMPORTANT]
    >
-   >Si usa Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories).
+   >Si usa Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=es#password-protected-maven-repositories).
 
    ```
    <settings>
@@ -256,12 +256,12 @@ Durante la generación de PDF/imágenes, es necesario crear un usuario de AEM pa
 
 Si utiliza AEM 6.5.5 o posterior:
 
-* [Creando un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
-* [Agregando permisos a un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
+* [Creando un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=es&#create-a-user)
+* [Agregando permisos a un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es&#permissions-in-aem)
 
 Si utiliza AEM Cloud Services:
 
-* [Administrar usuarios con AEM Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
+* [Administrar usuarios con AEM Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es&#accessing)
 
 Se requieren los siguientes permisos para el usuario del servicio AEM en el contenido que se convertirá a PDF/Image y se insertará en Veeva:
 
