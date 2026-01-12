@@ -2,7 +2,7 @@
 title: Uso de integración de Veeva Vault
 description: Uso de integración de Veeva Vault
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 3%
@@ -37,7 +37,7 @@ Recibirá acceso al paquete de integración de AEM. Existen dos opciones para in
 
 #### Instalación de paquetes
 
-Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. [Encontrará instrucciones detalladas para instalar un paquete de AEM haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?lang=es&#installing-packages)
+Para instalar el paquete, descárguelo con el vínculo que aparece en el correo electrónico de incorporación. [Encontrará instrucciones detalladas para instalar un paquete de AEM haciendo clic aquí.](https://experienceleague.adobe.com/docs/experience-manager-64/administering/contentmanagement/package-manager.html?#installing-packages)
 
 #### Instalación de POM
 
@@ -47,7 +47,7 @@ Para incluir el conector en el POM, siga estos pasos. Reemplace su nombre de usu
 
    >[!IMPORTANT]
    >
-   >Si usa Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=es#password-protected-maven-repositories).
+   >Si usa Cloud Manager, el enfoque seguro es seguir los pasos que se encuentran aquí para [repositorios Maven protegidos por contraseña](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/setting-up-project.html?lang=en#password-protected-maven-repositories).
 
    ```
    <settings>
@@ -256,12 +256,12 @@ Durante la generación de PDF/imágenes, es necesario crear un usuario de AEM pa
 
 Si utiliza AEM 6.5.5 o posterior:
 
-* [Creando un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?lang=es&#create-a-user)
-* [Agregando permisos a un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=es&#permissions-in-aem)
+* [Creando un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/setup-organize-users/adding-configuring-users.html?#create-a-user)
+* [Agregando permisos a un usuario en AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?#permissions-in-aem)
 
 Si utiliza AEM Cloud Services:
 
-* [Administrar usuarios con AEM Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=es&#accessing)
+* [Administrar usuarios con AEM Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?#accessing)
 
 Se requieren los siguientes permisos para el usuario del servicio AEM en el contenido que se convertirá a PDF/Image y se insertará en Veeva:
 
@@ -271,7 +271,6 @@ Se requieren los siguientes permisos para el usuario del servicio AEM en el cont
 >
 > Estas acciones deben realizarse como administrador para cada sistema.
 > Debe cumplir con los estándares de seguridad de su organización al crear usuarios y configurar permisos.
->
 
 #### Creación de usuarios de Veeva
 
@@ -281,7 +280,7 @@ Para utilizar esta integración, es necesario crear un usuario en Veeva Vault. P
 
    ![Navegar a usuario Veeva](assets/veeva-user-navigate.png)
 
-2. Rellene las entradas necesarias. La configuración más sencilla es establecer `License Type` en `Full User` y `Security Profile` en `Vault Owner`. Guardar cuando se complete.
+1. Rellene las entradas necesarias. La configuración más sencilla es establecer `License Type` en `Full User` y `Security Profile` en `Vault Owner`. Guardar cuando se complete.
 
    ![Crear usuario de Veeva](assets/veeva-user-create.png)
 
