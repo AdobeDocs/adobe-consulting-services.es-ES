@@ -2,7 +2,7 @@
 title: Uso de integración de Veeva Vault
 description: Uso de integración de Veeva Vault
 exl-id: efff7af1-eb25-4a1d-b7ef-52e3336970ff
-source-git-commit: b024e4295b5b37030c1524342832400c279c650a
+source-git-commit: b4261448e34cdcee9c28410a9d3cd8dbcc9212fa
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 3%
@@ -271,7 +271,6 @@ Se requieren los siguientes permisos para el usuario del servicio AEM en el cont
 >
 > Estas acciones deben realizarse como administrador para cada sistema.
 > Debe cumplir con los estándares de seguridad de su organización al crear usuarios y configurar permisos.
->
 
 #### Creación de usuarios de Veeva
 
@@ -281,7 +280,7 @@ Para utilizar esta integración, es necesario crear un usuario en Veeva Vault. P
 
    ![Navegar a usuario Veeva](assets/veeva-user-navigate.png)
 
-2. Rellene las entradas necesarias. La configuración más sencilla es establecer `License Type` en `Full User` y `Security Profile` en `Vault Owner`. Guardar cuando se complete.
+1. Rellene las entradas necesarias. La configuración más sencilla es establecer `License Type` en `Full User` y `Security Profile` en `Vault Owner`. Guardar cuando se complete.
 
    ![Crear usuario de Veeva](assets/veeva-user-create.png)
 
