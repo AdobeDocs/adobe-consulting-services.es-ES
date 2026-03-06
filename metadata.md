@@ -3,13 +3,12 @@ product: adobe experience manager
 solution: Experience Manager
 description: Consultar la documentación de Experience Manager
 type: Documentation
-git-repo: https://github.com/Adobe-Enterprise-Docs/adobe-consulting-services.es-ES
-index: y
-author: Anon
-source-git-commit: ac36c3ae49021c2b66234c8664df0969995aba62
+git-repo: https://github.com/AdobeDocs/adobe-consulting-services.en
+index: true
+source-git-commit: f491b48a151904f13becc146beab52600c9cef46
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 54%
+source-wordcount: '94'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 54%
 Los metadatos del sistema de creación de GitHub son jerárquicos y se definen con los siguientes niveles crecientes de precedentes.
 
 1. metadata.md
-1. TDC
+1. ToC
 1. Artículo
 
 Los metadatos definidos en el archivo metadata.md se aplican a todo el repositorio, pero se pueden sobrescribir en los niveles de TDC y de artículo. Cualquier anulación de los metadatos debe realizarse en el nivel más bajo posible.
@@ -30,7 +29,7 @@ metadata.md
 * `git-repo`
 * `index: y`
 
-TDC
+ToCs
 
 * `sub-product`
 * `user-guide-title`
